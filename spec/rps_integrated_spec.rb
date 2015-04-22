@@ -16,7 +16,7 @@ describe('rps path', {:type => :feature}) do
     visit('/')
 
     fill_in('player1', :with => 'rock')
-    fill_in('player2', :with => 'scissors')
+    fill_in('player2', :with => 'rock')
     click_button('Send')
     expect(page).to have_content(1)
   end
